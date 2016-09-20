@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class k {
+public class p4 {
     static public int Faculteit(int aF){
 		int f = 0;
 		
@@ -33,7 +33,7 @@ public class k {
         
         for(int k = 0; k<=n; k++){
 			int tempNK = n-k;
-			float binom = (Faculteit(n)) / (Faculteit(k)*Faculteit(tempNK));
+			int binom = (Faculteit(n)) / (Faculteit(k)*Faculteit(tempNK));
             
             System.out.println("\n"+n + "!/" + k + "!("+n+ "-"+k+")! = " +binom);
             
