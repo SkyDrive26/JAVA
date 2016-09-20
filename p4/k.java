@@ -1,19 +1,25 @@
-
 import java.util.Scanner;
 
-class opd4 {
-
-static Scanner input = new Scanner(System.in);
-
-    static public int Faculty(int x){
-        int sum = 1;
-        for(int i = 1; i<= x; i++){
-            sum*=i;
-        }
-        return sum;
+public class k {
+    static public int Faculteit(int aF){
+		int f = 0;
+		
+		if(aF != 0){
+			for(int i = aF; i >= 1; i--){
+				if(f == 0){
+					f = i;
+				}else{
+					f = f*i;
+				}
+			}
+		}else{
+			f = 1;
+		}
+		return f;
     }
     
     public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
         
         System.out.print("geef variablen a: ");
         int a = input.nextInt();
@@ -25,61 +31,14 @@ static Scanner input = new Scanner(System.in);
         
         int sum = 0;
         
-        for(int i = 0; i<=n; i++){
+        for(int k = 0; k<=n; k++){
+			int tempNK = n-k;
+			float binom = (Faculteit(n)) / (Faculteit(k)*Faculteit(tempNK));
             
-            int tempBinomA = (Faculty(i)*n);
-            int tempBinomB = (Faculty(i)*i);
-            int tempBinom  = tempBinomA - tempBinomB;
-            float binom = (Faculty(n)) / (Faculty(tempBinom));
+            System.out.println("\n"+n + "!/" + k + "!("+n+ "-"+k+")! = " +binom);
             
-            System.out.println("\n"+n + "!/" + i + "!("+n+ "-"+i+")! = " +binom);
-            
-            int temp = (n-i);
-            sum += (binom*(Math.pow(a,i)*Math.pow(b,temp)));
-            //System.out.println("Sum is: "+ sum);
-        }
-        System.out.print("\nAntwoord is: "+ sum);
-    }
-}
-
-import java.util.Scanner;
-
-class opd4 {
-
-static Scanner input = new Scanner(System.in);
-
-    static public int Faculty(int x){
-        int sum = 1;
-        for(int i = 1; i<= x; i++){
-            sum*=i;
-        }
-        return sum;
-    }
-    
-    public static void main(String[] args) {
-        
-        System.out.print("geef variablen a: ");
-        int a = input.nextInt();
-        System.out.print("geef variablen b: ");
-        int b = input.nextInt();
-        System.out.print("geef variablen n: ");
-        int n = input.nextInt();
-        System.out.println("A=" + a + " B=" + b + " N=" + n+"\n");
-        
-        int sum = 0;
-        
-        for(int i = 0; i<=n; i++){
-            
-            int tempBinomA = (Faculty(i)*n);
-            int tempBinomB = (Faculty(i)*i);
-            int tempBinom  = tempBinomA - tempBinomB;
-            float binom = (Faculty(n)) / (Faculty(tempBinom));
-            
-            System.out.println("\n"+n + "!/" + i + "!("+n+ "-"+i+")! = " +binom);
-            
-            int temp = (n-i);
-            sum += (binom*(Math.pow(a,i)*Math.pow(b,temp)));
-            //System.out.println("Sum is: "+ sum);
+            int temp = (n-k);
+            sum = sum + (binom*(Math.pow(a,k)*Math.pow(b,temp)));
         }
         System.out.print("\nAntwoord is: "+ sum);
     }
