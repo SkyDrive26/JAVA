@@ -38,7 +38,7 @@ public class k {
             System.out.println("\n"+n + "!/" + k + "!("+n+ "-"+k+")! = " +binom);
             
             int temp = (n-k);
-            sum = sum + (binom*(Math.pow(a,k)*Math.pow(b,temp)));
+            sum += (binom*(Math.pow(a,k)*Math.pow(b,temp)));
         }
         System.out.print("\nHet antwoord is: "+ sum);
     }
