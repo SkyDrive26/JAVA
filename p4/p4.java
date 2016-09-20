@@ -1,14 +1,7 @@
-/* Imported Libraries */
 import java.util.Scanner;
 
-/* Main class */
-public class p4{
-	public static void main(String[] args){
-		Scanner input = new Scanner(System.in);
-		
-		/* Faculteit */
-		System.out.print("Voer een getal in om de faculteit te berekenen: ");
-		int aF = input.nextInt();
+public class k {
+    static public int Faculteit(int aF){
 		int f = 0;
 		
 		if(aF != 0){
@@ -22,8 +15,32 @@ public class p4{
 		}else{
 			f = 1;
 		}
-		
-		System.out.println("De faculteit van "+aF+" is "+f);
-		
-	}
+		return f;
+    }
+    
+    public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+        
+        System.out.print("Voer variablen a in: ");
+        int a = input.nextInt();
+        System.out.print("Voer variablen b in: ");
+        int b = input.nextInt();
+        System.out.print("Voer variablen n in: ");
+        int n = input.nextInt();
+        System.out.println("A=" + a + " B=" + b + " N=" + n+"\n");
+        
+        int sum = 0;
+        
+        for(int k = 0; k<=n; k++){
+			int tempNK = n-k;
+			float binom = (Faculteit(n)) / (Faculteit(k)*Faculteit(tempNK));
+            
+            System.out.println("\n"+n + "!/" + k + "!("+n+ "-"+k+")! = " +binom);
+            
+            int temp = (n-k);
+            sum += (binom*(Math.pow(a,k)*Math.pow(b,temp)));
+        }
+        System.out.print("\nHet antwoord is: "+ sum);
+    }
 }
+
