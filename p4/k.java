@@ -40,7 +40,7 @@ public class k {
             int temp = (n-k);
             sum = sum + (binom*(Math.pow(a,k)*Math.pow(b,temp)));
         }
-        System.out.print("\nAntwoord is: "+ sum);
+        System.out.print("\nHet antwoord is: "+ sum);
     }
 }
 
