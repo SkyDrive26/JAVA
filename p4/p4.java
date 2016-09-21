@@ -27,7 +27,7 @@ public class p4 {
         int b = input.nextInt();
         System.out.print("Voer variablen n in: ");
         int n = input.nextInt();
-        System.out.println("A=" + a + " B=" + b + " N=" + n+"\n");
+        System.out.println("(" + a + ", " + b + " )^" + n+"\n");
         
         int sum = 0;
         
