@@ -21,7 +21,7 @@ public class p5{
 		
 		boolean nextM = false;
 		
-		for(int i = m++; i < tP++; i++){
+		for(int i = m++; i <= tP; i++){
 			if(nextM){
 				m = i;
 				nextM = true;
