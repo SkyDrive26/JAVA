@@ -20,9 +20,9 @@ public class Pont{
 	
 	public void print(){
 		if(auto == null){
-			System.out.println("Er staat geen auto op de pont;");
+			System.out.println("Er staat geen auto op de pont;"+"\r\n");
 		}else{
-			System.out.println("De auto "+auto.getNaam()+" staat op de pont!");
+			System.out.println("De auto "+auto.getNaam()+" staat op de pont!"+"\r\n");
 		}
 	}
 	

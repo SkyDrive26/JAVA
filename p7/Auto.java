@@ -11,6 +11,6 @@ public class Auto{
 	public String getNaam(){return naam;}
 	
 	public void print(){
-		System.out.println(naam);
+		System.out.println(naam+"\r\n");
 	}
 }

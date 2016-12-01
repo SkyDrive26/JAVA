@@ -22,14 +22,14 @@ public class Oever{
 		if(auto == null){
 			System.out.println("Er staat geen auto aan deze oever!");
 		}else{
-			System.out.println("De auto "+auto.getNaam()+ "staat aan deze oever");
+			System.out.println("De auto "+auto.getNaam()+ " staat aan de "+naam+" oever");
 		}
 		
 		// Pont is misschien nog niet goed!
 		if(pont == null){
-			System.out.println("Er ligt geen pont aan deze oever!");
+			System.out.println("Er ligt geen pont aan de "+naam+" oever!"+"\r\n");
 		}else{
-			System.out.println("Er ligt een pont aan deze oever!");
+			System.out.println("Er ligt een pont aan de "+naam+" oever!"+"\r\n");
 		}
 	}
 	
