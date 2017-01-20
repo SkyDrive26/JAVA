@@ -10,11 +10,11 @@ public class dodecaeder extends vorm{
 	
 	/* Methods */
 	public double inhoud(){
-		return ((1/4)*(15+(7*Math.sqrt(5)))*Math.pow(riblengte, 3));
+		return ((1d/4d)*(15d+(7d*Math.sqrt(5d)))*Math.pow(riblengte, 3));
 	}
 	
 	public double oppervlakte(){
-		return (3*Math.sqrt(25+(10*Math.sqrt(5)*Math.pow(riblengte, 2))));
+		return (3d*Math.sqrt(25d+(10d*Math.sqrt(5d)*Math.pow(riblengte, 2))));
 	}
 	
 	public void print(){

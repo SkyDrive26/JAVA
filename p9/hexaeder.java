@@ -14,7 +14,7 @@ public class hexaeder extends vorm{
 	}
 	
 	public double oppervlakte(){
-		return (6*Math.pow(riblengte, 2));
+		return (6d*Math.pow(riblengte, 2));
 	}
 	
 	public void print(){

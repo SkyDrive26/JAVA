@@ -10,11 +10,11 @@ public class octaeder extends vorm{
 	
 	/* Methods */
 	public double inhoud(){
-		return ((1/3)*Math.sqrt(2)*Math.pow(riblengte, 3));
+		return ((1d/3d)*Math.sqrt(2d)*Math.pow(riblengte, 3));
 	}
 	
 	public double oppervlakte(){
-		return (2*Math.sqrt(3)*Math.pow(riblengte, 2));
+		return (2d*Math.sqrt(3d)*Math.pow(riblengte, 2));
 	}
 	
 	public void print(){
