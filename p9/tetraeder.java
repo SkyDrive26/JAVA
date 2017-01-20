@@ -10,11 +10,11 @@ public class tetraeder extends vorm{
 	
 	/* Methods */
 	public double inhoud(){
-		return ((1/12)*Math.pow(riblengte, 3)*Math.sqrt(2));
+		return ((1d/12d)*Math.pow(riblengte, 3)*Math.sqrt(2d));
 	}
 	
 	public double oppervlakte(){
-		return (Math.pow(riblengte, 2)*Math.sqrt(3));
+		return (Math.pow(riblengte, 2)*Math.sqrt(3d));
 	}
 	
 	public void print(){

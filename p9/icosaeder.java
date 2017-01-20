@@ -10,11 +10,11 @@ public class icosaeder extends vorm{
 	
 	/* Methods */
 	public double inhoud(){
-		return ((5/12)*(3+Math.sqrt(5))*Math.pow(riblengte, 3));
+		return ((5d/12d)*(3d+Math.sqrt(5d))*Math.pow(riblengte, 3));
 	}
 	
 	public double oppervlakte(){
-		return (5*Math.sqrt(3)*Math.pow(riblengte, 2));
+		return (5d*Math.sqrt(3d)*Math.pow(riblengte, 2));
 	}
 	
 	public void print(){
